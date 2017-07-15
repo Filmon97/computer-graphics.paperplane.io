@@ -1,0 +1,72 @@
+La computer grafica nasce per scopi industriali e militari nella seconda metà degli anni ’60,
+ma era esclusivamente utilizzata da quei poche computer dotati di grande potenza di calcolo.
+
+Con la diffusione di personal computer con schede video //(avvento) di grande versatilità e dotati di grande potenza di calcolo,
+la grafica computerizzata è diventata dominio di tutti.
+
+Al giorno d’oggi la grafica computerizzata è parte integrante di molti ambiti professionali e di consumo
+come i videogiochi, ritocco fotografico,(scienze) montaggio di filmati, industria cinematografica.
+
+
+// differenza tra applicazioni real time e prerenderizzate(esempi del processo e delle capacità computazionali)
+
+// MATEMATICA RAPPRESENTAZIONE GRAFICA FUNZIONI A DUE VARIABILI E FUNZIONI IN UNA VARIABILE con codice principale
+sarebbe meglio soltanto in due variabili non ho molto tempo
+
+	Le funzioni in una variabile generalità, funzioni continue e calcolo di limiti, derivata di una funzione e studio della funzione
+	Le funzioni in due variabili generalità, ricerca del dominio, linee di superficie e di livello, derivate parziali, piano tangente
+	ad una superficie, massimi e minimi, massimi e minimi vincolati metodo della sostituzione e dei moltiplicatori di Lagrange, teorema di Weierstrass, teorema di Schwarz.
+
+// INGLESE web apps
+
+// TDP SISTEMI DISTRIBUITI trovato SIMD e MIMD(grid) --- definizione etc.
+
+qui c'è da scrivere un po di roba 
+// INFORMATICA HTML,JAVASCRIPT,(cercare un database)
+
+// SISTEMI E RETI grid computing(cloud computing o renderfarm)
+
+L'uso di render farm nell'industria dell'intrattenimento può essere vista come una delle prime applicazioni del grid computing.
+Una renderfarm è un insieme di calcolatori collegati tra loro, chiamati comunemente nodi, allo scopo di elaborare le immagini di computer grafica.
+
+//renderfarm -> grid computing con schede grafiche potenti.
+
+al contrario del cloud computing , nel grid avremo poche istanze che girano contemporaneamente, però queste normalmente saranno estremamente esose di risorse e, pertanto, 
+potrebbero richedere l’utilizzo esclusivo dell’hardware del sistema costringendo le nuove istanze a rimanere in attesa.
+
+Molto spesso il cloud computing viene confuso con il grid computing 
+Un sistema grid permette ai suoi utenti di poter massimizzare le risorse non utilizzate all'interno della loro rete
+
+Grid computing è generalmente usato per risolvere problemi di larga scala(matematetici e scientifici) che richiedono una grande potenza computazionale
+la grandezza di un sistema grid può variare: 
+. piccolo: internal network computer con lo stesso sistema operativo (sistema omogeneo)
+. grande: sistema complesso di computer con diversi sistemi operativi (sistema eterogeneo)
+
+Grid Computing significa condividere ed utilizzare la potenza di elaborazione di una serie di computer, tipicamente server, collegati in rete tramite le infrastrutture di Internet
+
+Le reti sono ideate con l'aiuto di librerie software (“middleware”) che permettono ai computer di eseguire processi o una serie di applicazioni attraverso l'intera rete di macchine.
+Senza di esse la comunicazione attraverso il sistema sarebbe impossibile.
+
+Inoltre vi è almeno un host, chiamato “control node,”
+che ha il compito di privilegiare e pianificare i compiti di tutta la rete.
+Il "control node" determina per ogni attività a quali risorse sarà acconsentito accedere e monitora il sistema per fare in modo che non venga sovraccaricato 
+
+// GPU 
+
+La GPU(graphics processing unit) o unità di elaborazione grafica (processore grafico) 
+è una tipologia particolare di coprocessore che si contraddistingue per essere specializzata nel rendering di immagini grafiche.
+ Il suo tipico utilizzo è come coprocessore della CPU e da alcuni anni viene anche utilizzata in generiche elaborazioni dati (GPGPU).
+La GPU è tipicamente implementata come microprocessore monolitico e, da alcuni anni, viene anche implementata assieme alla CPU
+ nel medesimo circuito integrato.
+
+// rendering in tempo reale vs pre-rendering
+
+////////// real time
+
+I motori 3D in tempo reale (in inglese "real time 3D engine") sono impiegati laddove sia necessario produrre immagini tridimensionali "al volo". Con questa espressione si indica la capacità di calcolare, e quindi di mostrare a schermo (oppure tramite altri dispositivi ottici, ad esempio occhiali per la realtà virtuale) le immagini in brevissimo tempo, tale da ottenere un certo numero di immagini al secondo, tipicamente 30-60 immagini al secondo (abbreviato spesso come fps, dall'inglese "Frames Per Second"). Questi requisiti di velocità possono essere raggiunti con varie tecniche, evolutesi nel tempo grazie soprattutto all'invenzione di dispositivi hardware dedicati allo scopo: gli acceleratori grafici 3D. Questi dispositivi, costituiti in sostanza da un coprocessore matematico e da una certa quantità di memoria RAM, svolgono certe funzioni matematiche estremamente ottimizzate e consentono allo sviluppatore di sgravare la CPU da un'enorme quantità di calcoli, permettendo quindi di realizzare motori grafici più raffinati e più veloci. L'introduzione degli acceleratori grafici ha decretato la formazione di due sottocategorie di motori in tempo reale: i motori grafici software e i motori accelerati in hardware. Nonostante il nome possa trarre in inganno, si parla in entrambi i casi di software. La differenza consiste nel fatto che i primi sfruttano esclusivamente la CPU (ed eventualmente la FPU e le istruzioni SIMD come MMX, SSE, 3DNow!, ecc.) per effettuare i calcoli geometrici necessari, mentre i secondi relegano molte delle funzioni primarie (come la trasformazione, l'illuminazione, l'applicazione delle texture, ecc.) all'acceleratore hardware. Ovviamente entrambi gli approcci portano dei vantaggi e degli svantaggi: i motori software renderizzano le immagini esattamente nel modo previsto dal programmatore ma risultano lenti, quindi non possono produrre immagini di elevata qualità per l'eccessiva quantità di calcoli necessari; i motori accelerati, invece, sono estremamente veloci e producono immagini di elevata qualità, ma richiedono la presenza di hardware dedicato e l'accuratezza delle immagini è soggetta al particolare acceleratore utilizzato. I motori 3D in tempo reale trovano largo impiego nella realizzazione di videogames, simulatori, interfacce grafiche, realtà virtuale.
+
+//// pre-rendering(fotorealistico)
+
+Si definiscono così quei motori grafici 3D che producono immagini di qualità prossima o addirittura paragonabile a immagini di scene reali. I motori grafici di questa categoria sono esclusivamente di tipo software, cioè non si appoggiano su hardware di accelerazione 3D. Nelle applicazioni in cui vengono sfruttati i motori 3D fotorealistici, la precisione e la qualità delle immagini renderizzate è prioritaria rispetto alla velocità di calcolo. I motori grafici di questa categoria sfruttano algoritmi molto sofisticati per simulare fedelmente gli effetti ottici di diffusione, rifrazione, riflessione, pulviscolo, proiezione di ombre, aberrazioni cromatiche e altri effetti che contribuiscono a rendere la scena estremamente realistica. Molti di questi algoritmi non possono essere implementati nei motori in tempo reale per la loro estrema complessità, oppure vengono implementati in forma semplificata e approssimativa. Alcuni di questi algoritmi sono il Ray Tracing, il Photon Mapping, e altri. Data la mole di calcoli necessaria, generalmente i motori 3D fotorealistici sono progettati per essere eseguiti su macchine multiprocessore e su cluster. Questi motori grafici sono usati per la realizzazione di opere artistiche, progettazione architettonica e meccanica, design, produzioni cinematografiche (per effetti speciali o per interi film d'animazione).
+
+// desktop vs browser (API etc) inglese web apps
